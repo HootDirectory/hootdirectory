@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoot Directory</title>
+  <link rel="stylesheet" href="HootCSS.css" />
+  <script src="HootScript.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🦉 Hoot Directory</h1>
+      <p>Discover and explore the best hoots in our professional directory</p>
+      <a href="HootEvents.html" class="button">Upcoming Hoot Events</a>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search hoots...">
+    </div>
+
+    <div class="directory-content">
+      <div id="hootGrid" class="hoot-grid"></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-number" id="totalHoots">247</span>
+        <div class="stat-label">Total Hoots</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" id="categories">12</span>
+        <div class="stat-label">Categories</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" id="activeUsers">1.2k</span>
+        <div class="stat-label">Active Users</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
