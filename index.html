@@ -6,11 +6,15 @@
   <title>Hoot Directory</title>
   <link rel="stylesheet" href="HootCSS.css" />
   <script src="HootScript.js" defer></script>
-  <script>
-  if (location.hostname === "hootdirectory.com") {
-    location.href = "https://www.hootdirectory.com" + location.pathname;
+<script>
+  const current = window.location.hostname;
+  const target = "www.hootdirectory.com";
+
+  if (current === "hootdirectory.com") {
+    const fullPath = window.location.pathname + window.location.search + window.location.hash;
+    window.location.replace("https://" + target + fullPath);
   }
-  </script>
+</script>
 
 </head>
 <body>
@@ -46,4 +50,5 @@
   </div>
 </body>
 </html>
+
 
